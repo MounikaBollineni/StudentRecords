@@ -8,7 +8,6 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name="student")
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter

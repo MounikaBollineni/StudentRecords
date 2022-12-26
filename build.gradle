@@ -25,6 +25,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
+	runtimeOnly group: 'org.flywaydb', name: 'flyway-gradle-plugin', version: '9.10.2'
+
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation('org.springdoc:springdoc-openapi-webmvc-core:1.6.9')
 	implementation('org.springdoc:springdoc-openapi-ui:1.6.9')
