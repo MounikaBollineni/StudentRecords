@@ -8,4 +8,6 @@ public interface ServiceInterface {
     List<Student> getStudents();
 
     void updateStudentName(Student student, Long id);
+
+    void removeRecord(long id);
 }

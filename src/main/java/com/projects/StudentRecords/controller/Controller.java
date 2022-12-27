@@ -25,4 +25,9 @@ public class Controller {
     public void updateStudent(@RequestBody Student student,@PathVariable("id") Long id){
         service.updateStudentName(student,id);
     }
+
+    @DeleteMapping("/delete-record-b-id/{id}")
+    public void deleteRecordById(@PathVariable  long id){
+        service.removeRecord(id);
+    }
 }

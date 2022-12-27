@@ -21,4 +21,9 @@ public class Service implements ServiceInterface {
         dataToChange.setName(student.getName());
         repository.save(dataToChange);
     }
+
+    @Override
+    public void removeRecord(long id) {
+        repository.deleteById(id);
+    }
 }
