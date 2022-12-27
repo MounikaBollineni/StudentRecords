@@ -14,4 +14,11 @@ public class Service implements ServiceInterface {
     public List<Student> getStudents() {
         return repository.findAll();
     }
+
+    @Override
+    public void updateStudentName(Student student, Long id) {
+        Student dataToChange=repository.getById(id);
+        dataToChange.setName(student.getName());
+        repository.save(dataToChange);
+    }
 }

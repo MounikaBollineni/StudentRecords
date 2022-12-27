@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ServiceInterface {
     List<Student> getStudents();
+
+    void updateStudentName(Student student, Long id);
 }
