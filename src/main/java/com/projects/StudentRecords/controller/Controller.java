@@ -1,6 +1,7 @@
 package com.projects.StudentRecords.controller;
 
 import com.projects.StudentRecords.entity.Student;
+import com.projects.StudentRecords.entity.StudentExamRecords;
 import com.projects.StudentRecords.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,7 +27,12 @@ public class Controller {
         service.updateStudentName(student,id);
     }
 
-    @DeleteMapping("/delete-record-b-id/{id}")
+    @GetMapping("/get-records-by-id/{id}")
+    public StudentExamRecords getStudentRecords(@PathVariable("id") Long id){
+       return service.addStudentRecords(id);
+    }
+
+    @DeleteMapping("/delete-record-by-id/{id}")
     public void deleteRecordById(@PathVariable  long id){
         service.removeRecord(id);
     }

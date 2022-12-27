@@ -42,7 +42,7 @@ public class SecurityConfiguration{
 
     @Bean
     public InMemoryUserDetailsManager userDetailsService(){
-        UserDetails userDetails=User.withUsername("mounika")
+        UserDetails userDetails=User.withUsername("Mounika")
                 .password("{noop}Mounika@97").roles("USER").build();
         return new InMemoryUserDetailsManager(userDetails);
     }

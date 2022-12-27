@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.context.annotation.Primary;
 
 import javax.persistence.*;
 
@@ -25,5 +26,7 @@ public class StudentExamRecords {
 
     @Column
     private Character grade;
+
+
 
 }
